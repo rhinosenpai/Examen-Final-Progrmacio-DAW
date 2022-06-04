@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw.programacio.thenewmisterquestion.controllers.MainController">
    <children>
-      <Button layoutX="66.0" layoutY="252.0" mnemonicParsing="false" onAction="#onbuttonclick" text="Afegir preguntes y respostes" />
-      <Button layoutX="66.0" layoutY="323.0" mnemonicParsing="false" text="Jugar" />
+      <Button layoutX="40.0" layoutY="253.0" mnemonicParsing="false" onAction="#goToQuestions" prefHeight="25.0" prefWidth="260.0" text="Afegir preguntes y respostes" />
+      <Button layoutX="40.0" layoutY="323.0" mnemonicParsing="false" onAction="#goToPlay" prefHeight="25.0" prefWidth="260.0" text="Jugar" />
+      <ImageView fitHeight="186.0" fitWidth="260.0" layoutX="40.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView layoutX="338.0" layoutY="63.0" prefHeight="305.0" prefWidth="235.0">
+        <columns>
+          <TableColumn fx:id="pos" prefWidth="63.0" text="Posicio" />
+          <TableColumn fx:id="nombre" prefWidth="107.0" text="Nom" />
+            <TableColumn fx:id="record" prefWidth="64.0" text="Punts" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

@@ -3,16 +3,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw.programacio.thenewmisterquestion.controllers.QuestionController">
+<AnchorPane fx:id="aPane" prefHeight="400.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw.programacio.thenewmisterquestion.controllers.QuestionController">
    <children>
-      <TextField fx:id="preg" layoutX="89.0" layoutY="68.0" />
-      <TextField fx:id="A" layoutX="89.0" layoutY="172.0" />
-      <TextField fx:id="B" layoutX="89.0" layoutY="217.0" />
-      <TextField fx:id="C" layoutX="89.0" layoutY="263.0" />
-      <Label layoutX="33.0" layoutY="177.0" text="A" />
-      <Label layoutX="33.0" layoutY="222.0" text="B" />
-      <Label layoutX="33.0" layoutY="268.0" text="C" />
-      <TextField layoutX="489.0" layoutY="68.0" prefHeight="28.0" prefWidth="46.0" />
+      <TextField fx:id="txtPreg" layoutX="89.0" layoutY="68.0" />
+      <TextField fx:id="txtA" layoutX="89.0" layoutY="172.0" />
+      <TextField fx:id="txtB" layoutX="89.0" layoutY="217.0" />
+      <TextField fx:id="txtC" layoutX="89.0" layoutY="263.0" />
+      <Label layoutX="61.0" layoutY="176.0" text="A" />
+      <Label layoutX="61.0" layoutY="221.0" text="B" />
+      <Label layoutX="61.0" layoutY="267.0" text="C" />
+      <TextField fx:id="txtValor" layoutX="348.0" layoutY="68.0" prefHeight="28.0" prefWidth="46.0" />
+      <SplitMenuButton fx:id="smenuCategoria" layoutX="300.0" layoutY="172.0" mnemonicParsing="false" text="Categories" />
+      <Label layoutX="27.0" layoutY="72.0" text="Pregunta" />
+      <Label layoutX="27.0" layoutY="134.0" text="Resposta" />
+      <Label layoutX="310.0" layoutY="74.0" text="Valor" />
+      <Label layoutX="28.0" layoutY="312.0" text="Opcio Correcta" />
+      <RadioButton fx:id="rdbA" layoutX="106.0" layoutY="346.0" mnemonicParsing="false" text="A" />
+      <RadioButton fx:id="rdbB" layoutX="149.0" layoutY="346.0" mnemonicParsing="false" text="B" />
+      <RadioButton fx:id="rdbC" layoutX="193.0" layoutY="346.0" mnemonicParsing="false" text="C" />
+      <Button fx:id="btnCancelar" layoutX="318.0" layoutY="276.0" mnemonicParsing="false" onAction="#volver" text="Cancelar" />
+      <Button fx:id="btnGuardar" layoutX="320.0" layoutY="334.0" mnemonicParsing="false" onAction="#Guardar" text="Guardar" />
+      <Label layoutX="182.0" layoutY="29.0" text="Nova pregunta" />
    </children>
 </AnchorPane>

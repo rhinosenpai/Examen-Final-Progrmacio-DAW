@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="333.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw.programacio.thenewmisterquestion.controllers.CategoriesController">
+   <children>
+      <Label layoutX="197.0" layoutY="27.0" text="Categories" />
+      <TextField fx:id="txtCategoria" layoutX="275.0" layoutY="59.0" />
+      <Button fx:id="btnAfegir" layoutX="275.0" layoutY="114.0" mnemonicParsing="false" onAction="#save" text="Afegir" />
+      <Button fx:id="btnEliminar" layoutX="372.0" layoutY="114.0" mnemonicParsing="false" onAction="#delete" text="Eliminar" />
+      <Button fx:id="btnTornar" layoutX="324.0" layoutY="243.0" mnemonicParsing="false" onAction="#tornar" text="Tornar" />
+      <ListView fx:id="lvCategoria" layoutX="26.0" layoutY="59.0" prefHeight="250.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
